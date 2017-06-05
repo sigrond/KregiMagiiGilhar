@@ -8,31 +8,31 @@
 <div class="w3-panel">
 	<div id="canvas" style="float: left; width:600px;" class="w3-panel w3-border w3-border-blue w3-round-xlarge w3-padding w3-margin-right w3-col"></div>
 	<div id="magie" style="float: left;" class="w3-panel w3-border w3-border-blue w3-round-xlarge w3-padding w3-rest">
-		<input type="checkbox" id="magia" class="glowable"> <b style="color: gold;">Magia</b><br>
-		<br>Arkana:<br>
-		<input type="checkbox" id="AO" class="glowable"> <b style="color: cyan;">Aktywcja Obwodów</b><br>
-		<input type="checkbox" id="W" class="glowable"> <b style="color: lime;">Wchłanianie</b><br>
-		<input type="checkbox" id="M" class="glowable"> <b style="color: orange;">Manipulacja</b><br>
-		<br>Magie Podstawowe:<br>
-		<input type="checkbox" id="1" class="glowable"> 1 - Pieczęcie<br>
-		<input type="checkbox" id="2" class="glowable"> 2 - Rytuały<br>
-		<input type="checkbox" id="3" class="glowable"> 3 - Ki<br>
+		<input type="checkbox" id="magia" class="glowable w3-check"> <label><b style="color: gold;">Magia</b></label><br>
+		<h4>Arkana:</h4>
+		<input type="checkbox" id="AO" class="glowable w3-check"> <label><b style="color: cyan;">Aktywcja Obwodów</b></label><br>
+		<input type="checkbox" id="W" class="glowable w3-check"> <label><b style="color: lime;">Wchłanianie</b></label><br>
+		<input type="checkbox" id="M" class="glowable w3-check"> <label><b style="color: orange;">Manipulacja</b></label><br>
+		<h4>Magie Podstawowe:</h4>
+		<input type="checkbox" id="1" class="glowable w3-check"> <label>1 - Pieczęcie</label><br>
+		<input type="checkbox" id="2" class="glowable w3-check"> <label>2 - Rytuały</label><br>
+		<input type="checkbox" id="3" class="glowable w3-check"> <label>3 - Ki</label><br>
 		<br>
-		<input type="checkbox" id="4" class="glowable"> 4 - Esencje<br>
-		<input type="checkbox" id="5" class="glowable"> 5 - Krystalomancja<br>
-		<input type="checkbox" id="6" class="glowable"> 6 - Materializacja<br>
-		<input type="checkbox" id="7" class="glowable"> 7 - Psionika<br>
-		<input type="checkbox" id="8" class="glowable"> 8 - Sztuki - Wiedźma<br>
-		<input type="checkbox" id="9" class="glowable"> 9 - Krwi<br>
-		<br>Magie zaawansowane:<br>
-		<input type="checkbox" id="A" class="glowable"> A - Taumaturgia<br>
-		<input type="checkbox" id="B" class="glowable"> B - Skrypty<br>
-		<input type="checkbox" id="C" class="glowable"> C - Nekromancja<br>
-		<input type="checkbox" id="D" class="glowable"> D - Demonologia<br>
-		<input type="checkbox" id="E" class="glowable"> E - Woli - Elementalisa<br>
-		<input type="checkbox" id="F" class="glowable"> F - Wypaczona rzeczywistość<br>
+		<input type="checkbox" id="4" class="glowable w3-check"> <label>4 - Esencje</label><br>
+		<input type="checkbox" id="5" class="glowable w3-check"> <label>5 - Krystalomancja</label><br>
+		<input type="checkbox" id="6" class="glowable w3-check"> <label>6 - Materializacja</label><br>
+		<input type="checkbox" id="7" class="glowable w3-check"> <label>7 - Psionika</label><br>
+		<input type="checkbox" id="8" class="glowable w3-check"> <label>8 - Sztuki - Wiedźma</label><br>
+		<input type="checkbox" id="9" class="glowable w3-check"> <label>9 - Krwi</label><br>
+		<h4>Magie zaawansowane:</h4>
+		<input type="checkbox" id="A" class="glowable w3-check"> <label>A - Taumaturgia</label><br>
+		<input type="checkbox" id="B" class="glowable w3-check"> <label>B - Skrypty</label><br>
+		<input type="checkbox" id="C" class="glowable w3-check"> <label>C - Nekromancja</label><br>
+		<input type="checkbox" id="D" class="glowable w3-check"> <label>D - Demonologia</label><br>
+		<input type="checkbox" id="E" class="glowable w3-check"> <label>E - Woli - Elementalisa</label><br>
+		<input type="checkbox" id="F" class="glowable w3-check"> <label>F - Wypaczona rzeczywistość</label><br>
 		<br>
-		<input type="checkbox" id="X" class="glowable"> X - xxx<br>
+		<input type="checkbox" id="X" class="glowable w3-check"> <label>X - xxx</label><br>
 		
 	</div>
 </div>
@@ -157,122 +157,122 @@
 			switch(this.id){
 				case "magia":
 					var tmp=c0;
-					this.checked?tmp.g=tmp.glow({color: tmp.attr('stroke')}):tmp.g.remove();
+					this.checked?tmp.g=tmp.glow({color: tmp.attr('stroke'), width: 30}):tmp.g.remove();
 					break;
 				case "W":
 					var tmp=cW;
-					this.checked?tmp.g=tmp.glow({color: tmp.attr('stroke')}):tmp.g.remove();
+					this.checked?tmp.g=tmp.glow({color: tmp.attr('stroke'), width: 30}):tmp.g.remove();
 					break;
 				case "AO":
 					var tmp=cAO;
-					this.checked?tmp.g=tmp.glow({color: tmp.attr('stroke')}):tmp.g.remove();
+					this.checked?tmp.g=tmp.glow({color: tmp.attr('stroke'), width: 30}):tmp.g.remove();
 					break;
 				case "M":
 					var tmp=cM;
-					this.checked?tmp.g=tmp.glow({color: tmp.attr('stroke')}):tmp.g.remove();
+					this.checked?tmp.g=tmp.glow({color: tmp.attr('stroke'), width: 30}):tmp.g.remove();
 					break;
 				case "1":
 					var tmp=t1;
 					var rc=r.rect(tmp.getBBox().x-6,tmp.getBBox().y,28,28);
 					rc.attr({opacity: 0});
-					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff'}):tmp.g.remove();
+					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff', width: 30}):tmp.g.remove();
 					break;
 				case "2":
 					var tmp=t2;
 					var rc=r.rect(tmp.getBBox().x-6,tmp.getBBox().y,28,28);
 					rc.attr({opacity: 0});
-					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff'}):tmp.g.remove();
+					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff', width: 30}):tmp.g.remove();
 					break;
 				case "3":
 					var tmp=t3;
 					var rc=r.rect(tmp.getBBox().x-6,tmp.getBBox().y,28,28);
 					rc.attr({opacity: 0});
-					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff'}):tmp.g.remove();
+					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff', width: 30}):tmp.g.remove();
 					break;
 				case "4":
 					var tmp=t4;
 					var rc=r.rect(tmp.getBBox().x-6,tmp.getBBox().y,28,28);
 					rc.attr({opacity: 0});
-					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff'}):tmp.g.remove();
+					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff', width: 30}):tmp.g.remove();
 					break;
 				case "5":
 					var tmp=t5;
 					var rc=r.rect(tmp.getBBox().x-6,tmp.getBBox().y,28,28);
 					rc.attr({opacity: 0});
-					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff'}):tmp.g.remove();
+					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff', width: 30}):tmp.g.remove();
 					break;
 				case "6":
 					var tmp=t6;
 					var rc=r.rect(tmp.getBBox().x-6,tmp.getBBox().y,28,28);
 					rc.attr({opacity: 0});
-					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff'}):tmp.g.remove();
+					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff', width: 30}):tmp.g.remove();
 					break;
 				case "7":
 					var tmp=t7;
 					var rc=r.rect(tmp.getBBox().x-6,tmp.getBBox().y,28,28);
 					rc.attr({opacity: 0});
-					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff'}):tmp.g.remove();
+					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff', width: 30}):tmp.g.remove();
 					break;
 				case "8":
 					var tmp=t8;
 					var rc=r.rect(tmp.getBBox().x-6,tmp.getBBox().y,28,28);
 					rc.attr({opacity: 0});
-					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff'}):tmp.g.remove();
+					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff', width: 30}):tmp.g.remove();
 					break;
 				case "9":
 					var tmp=t9;
 					var rc=r.rect(tmp.getBBox().x-6,tmp.getBBox().y,28,28);
 					rc.attr({opacity: 0});
-					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff'}):tmp.g.remove();
+					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff', width: 30}):tmp.g.remove();
 					break;
 				case "A":
 					var tmp=tA;
 					var rc=r.rect(tmp.getBBox().x-6,tmp.getBBox().y,28,28);
 					rc.attr({opacity: 0});
-					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff'}):tmp.g.remove();
+					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff', width: 30}):tmp.g.remove();
 					break;
 				case "B":
 					var tmp=tB;
 					var rc=r.rect(tmp.getBBox().x-6,tmp.getBBox().y,28,28);
 					rc.attr({opacity: 0});
-					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff'}):tmp.g.remove();
+					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff', width: 30}):tmp.g.remove();
 					break;
 				case "C":
 					var tmp=tC;
 					var rc=r.rect(tmp.getBBox().x-6,tmp.getBBox().y,28,28);
 					rc.attr({opacity: 0});
-					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff'}):tmp.g.remove();
+					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff', width: 30}):tmp.g.remove();
 					break;
 				case "D":
 					var tmp=tD;
 					var rc=r.rect(tmp.getBBox().x-6,tmp.getBBox().y,28,28);
 					rc.attr({opacity: 0});
-					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff'}):tmp.g.remove();
+					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff', width: 30}):tmp.g.remove();
 					break;
 				case "E":
 					var tmp=tE;
 					var rc=r.rect(tmp.getBBox().x-6,tmp.getBBox().y,28,28);
 					rc.attr({opacity: 0});
-					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff'}):tmp.g.remove();
+					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff', width: 30}):tmp.g.remove();
 					break;
 				case "F":
 					var tmp=tF;
 					var rc=r.rect(tmp.getBBox().x-6,tmp.getBBox().y,28,28);
 					rc.attr({opacity: 0});
-					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff'}):tmp.g.remove();
+					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff', width: 30}):tmp.g.remove();
 					break;
 				case "X":
 					var tmp=tX;
 					var rc=r.rect(tmp.getBBox().x-6,tmp.getBBox().y,28,28);
 					rc.attr({opacity: 0});
-					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff'}):tmp.g.remove();
+					this.checked?tmp.g=rc.glow({fill: true,color: '#ccccff', width: 30}):tmp.g.remove();
 					break;
 				
 			}
 			var tmp=l39;
 			if($("#3").prop('checked') || $("#9").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -280,7 +280,7 @@
 			var tmp=l94;
 			if($("#9").prop('checked') || $("#4").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -288,7 +288,7 @@
 			var tmp=l41;
 			if($("#4").prop('checked') || $("#1").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -296,7 +296,7 @@
 			var tmp=l38;
 			if($("#3").prop('checked') || $("#8").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -304,7 +304,7 @@
 			var tmp=l87;
 			if($("#8").prop('checked') || $("#7").prop('checked')){
 			if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -312,7 +312,7 @@
 			var tmp=l72;
 			if($("#7").prop('checked') || $("#2").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -320,7 +320,7 @@
 			var tmp=l26;
 			if($("#2").prop('checked') || $("#6").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -328,7 +328,7 @@
 			var tmp=l65;
 			if($("#6").prop('checked') || $("#5").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -336,7 +336,7 @@
 			var tmp=l51;
 			if($("#5").prop('checked') || $("#1").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -344,7 +344,7 @@
 			var tmp=l9E;
 			if($("#9").prop('checked') || $("#E").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -352,7 +352,7 @@
 			var tmp=l8E;
 			if($("#8").prop('checked') || $("#E").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -360,7 +360,7 @@
 			var tmp=lEF;
 			if($("#E").prop('checked') || $("#F").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -368,7 +368,7 @@
 			var tmp=lFX;
 			if($("#F").prop('checked') || $("#X").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -376,7 +376,7 @@
 			var tmp=lXB;
 			if($("#X").prop('checked') || $("#B").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -384,7 +384,7 @@
 			var tmp=lBA;
 			if($("#B").prop('checked') || $("#A").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -392,7 +392,7 @@
 			var tmp=lA4;
 			if($("#A").prop('checked') || $("#4").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -400,7 +400,7 @@
 			var tmp=lA5;
 			if($("#A").prop('checked') || $("#5").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -408,7 +408,7 @@
 			var tmp=lXD;
 			if($("#X").prop('checked') || $("#D").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -416,7 +416,7 @@
 			var tmp=lDC;
 			if($("#D").prop('checked') || $("#C").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -424,7 +424,7 @@
 			var tmp=lC2;
 			if($("#C").prop('checked') || $("#2").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -432,7 +432,7 @@
 			var tmp=lC6;
 			if($("#C").prop('checked') || $("#6").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
@@ -440,7 +440,7 @@
 			var tmp=l7C;
 			if($("#7").prop('checked') || $("#C").prop('checked')){
 				if(!!tmp.g)tmp.g.remove();
-				tmp.g=tmp.glow({color: '#6699ff'});
+				tmp.g=tmp.glow({color: '#6699ff', width: 30});
 			}
 			else{
 				if(!!tmp.g)tmp.g.remove();
